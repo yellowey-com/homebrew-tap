@@ -5,21 +5,21 @@
 class Snip < Formula
   desc "A fast, lightweight CLI snippet manager."
   homepage "https://github.com/yellowey-com/snip-cli"
-  version "0.16.0"
+  version "0.16.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.0/snip-cli_Darwin_x86_64.tar.gz"
-      sha256 "2793f8886de4d388db6d1d4a3af4c20ca5c5a49a44ec77c159a299960dab1b71"
+      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.1/snip-cli_Darwin_x86_64.tar.gz"
+      sha256 "e6709e28f5557332a66e4ce71e4a9187d08f1f875f639bcb513f05ae58464f5c"
 
       define_method(:install) do
         bin.install "snip"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.0/snip-cli_Darwin_arm64.tar.gz"
-      sha256 "11ddad084f032a9ba176af842f635acd4467459598825cfe315ed5f4103c393c"
+      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.1/snip-cli_Darwin_arm64.tar.gz"
+      sha256 "c8e137d0fdc8d367f2d259beed6da811222868b4c41b8f07ffd8c78880fca66d"
 
       define_method(:install) do
         bin.install "snip"
@@ -29,15 +29,15 @@ class Snip < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.0/snip-cli_Linux_x86_64.tar.gz"
-      sha256 "9e75d5bd02e28e8b5c847c0b147bd7831c552328b94c405985d63e15353b2921"
+      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.1/snip-cli_Linux_x86_64.tar.gz"
+      sha256 "84a8b5bb528fb8fc49976167b46a7865be0e346310174b9775258ac399398d50"
       define_method(:install) do
         bin.install "snip"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.0/snip-cli_Linux_arm64.tar.gz"
-      sha256 "9506303b857d881a074dfb26e158a5834473a062d932c1257590a821c436c2fe"
+      url "https://github.com/yellowey-com/snip-cli/releases/download/v0.16.1/snip-cli_Linux_arm64.tar.gz"
+      sha256 "2a7a6898b0450044a07f9ff3c2d75dc6cd0cc04fe898284ee394a1372a3836bf"
       define_method(:install) do
         bin.install "snip"
       end
